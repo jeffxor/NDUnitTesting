@@ -154,3 +154,14 @@ $RECYCLE.BIN/
 
 # Mac desktop service store files
 .DS_Store
+
+# =========================
+# Log4Net Ignore
+# =========================
+mylogfile.txt
+
+# =========================
+# Nuget Ignore
+# =========================
+packages/*
+!packages/repositories.config
