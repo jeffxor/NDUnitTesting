@@ -1,13 +1,13 @@
-﻿using FluentNHibernate.Automapping;
+using EmployeeApplication.Domain.Model;
+using EmployeeApplication.Infrastructure.Database;
+using FluentNHibernate.Automapping;
 using FluentNHibernate.Cfg;
 using FluentNHibernate.Cfg.Db;
-using NDUnitTesting.Domain.Model;
+using NHibernate;
 using NHibernate.Tool.hbm2ddl;
 using StructureMap.Configuration.DSL;
-using NDUnitTesting.Infrastructure.Database;
-using NHibernate;
 
-namespace NDUnitTesting.Infrastructure.Registries
+namespace EmployeeApplication.Infrastructure.Registries
 {
     public class DatabaseRegistry : Registry
     {

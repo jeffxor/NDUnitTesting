@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
 using FluentNHibernate.Automapping;
 
-namespace NDUnitTesting.Infrastructure.Database
+namespace EmployeeApplication.Infrastructure.Database
 {
     public class EmployeeApplicationNHibernateConfiguration : DefaultAutomappingConfiguration
     {

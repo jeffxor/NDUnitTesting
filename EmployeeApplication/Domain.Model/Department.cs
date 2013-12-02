@@ -1,4 +1,4 @@
-namespace NDUnitTesting.Domain.Model
+namespace EmployeeApplication.Domain.Model
 {
     public class Department
     {

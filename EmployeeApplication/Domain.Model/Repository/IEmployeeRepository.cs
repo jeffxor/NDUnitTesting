@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 
-namespace NDUnitTesting.Domain.Model.Repository
+namespace EmployeeApplication.Domain.Model.Repository
 {
     public interface IEmployeeRepository
     {

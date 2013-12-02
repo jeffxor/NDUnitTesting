@@ -4,15 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D0A56FA4-25B0-41DB-8D7E-E90E55492E82}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{B0E91A83-7A5D-4BFA-9EB1-D1AB0918AE05}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NDUnitTesting</RootNamespace>
-    <AssemblyName>NDUnitTesting</AssemblyName>
+    <RootNamespace>EmployeeApplication</RootNamespace>
+    <AssemblyName>EmployeeApplication</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -49,6 +51,7 @@
       <HintPath>..\packages\structuremap.2.6.4.1\lib\net40\StructureMap.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -59,18 +62,20 @@
   <ItemGroup>
     <Compile Include="Domain.Model\Department.cs" />
     <Compile Include="Domain.Model\Employee.cs" />
-    <Compile Include="Domain.Model\Repository\IEmployeeRepository.cs" />
     <Compile Include="Domain.Model\Repository\IDepartmentRepository.cs" />
+    <Compile Include="Domain.Model\Repository\IEmployeeRepository.cs" />
     <Compile Include="Domain.Model\Repository\NHibernate\DepartmentNHibernateRespository.cs" />
     <Compile Include="Domain.Model\Repository\NHibernate\EmployeeNHibernateRespository.cs" />
     <Compile Include="Infrastructure\Database\EmployeeApplicationNHibernateConfiguration.cs" />
-    <Compile Include="Infrastructure\Registry\DatabaseRegistry.cs" />
+    <Compile Include="Infrastructure\Registries\DatabaseRegistry.cs" />
+    <Compile Include="Infrastructure\Registries\RepositoryRegistry.cs" />
+    <Compile Include="EmployeeApp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
