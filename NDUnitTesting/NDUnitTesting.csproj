@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FluentNHibernate">
+      <HintPath>..\packages\FluentNHibernate.1.3.0.733\lib\FluentNHibernate.dll</HintPath>
+    </Reference>
     <Reference Include="Iesi.Collections">
       <HintPath>..\packages\Iesi.Collections.3.2.0.4000\lib\Net35\Iesi.Collections.dll</HintPath>
     </Reference>
@@ -41,6 +44,9 @@
     </Reference>
     <Reference Include="NHibernate">
       <HintPath>..\packages\NHibernate.3.3.3.4001\lib\Net35\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureMap">
+      <HintPath>..\packages\structuremap.2.6.4.1\lib\net40\StructureMap.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -55,6 +61,10 @@
     <Compile Include="Domain.Model\Employee.cs" />
     <Compile Include="Domain.Model\Repository\IEmployeeRepository.cs" />
     <Compile Include="Domain.Model\Repository\IDepartmentRepository.cs" />
+    <Compile Include="Domain.Model\Repository\NHibernate\DepartmentNHibernateRespository.cs" />
+    <Compile Include="Domain.Model\Repository\NHibernate\EmployeeNHibernateRespository.cs" />
+    <Compile Include="Infrastructure\Database\EmployeeApplicationNHibernateConfiguration.cs" />
+    <Compile Include="Infrastructure\Registry\DatabaseRegistry.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
