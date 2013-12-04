@@ -8,7 +8,7 @@ namespace EmployeeApplication.Infrastructure.Database
 
         public override bool ShouldMap(Type type)
         {
-            return type.Namespace == "NDUnitTesting.Domain.Model";
+            return type.Namespace == "EmployeeApplication.Domain.Model";
         }
     }
 }

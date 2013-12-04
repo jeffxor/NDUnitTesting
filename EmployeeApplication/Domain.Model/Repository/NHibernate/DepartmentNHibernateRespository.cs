@@ -15,7 +15,7 @@ namespace EmployeeApplication.Domain.Model.Repository.NHibernate
 
         public Department GetById(int Id)
         {
-            throw new NotImplementedException();
+            return _session.Get<Department>(Id);
         }
 
         public List<Department> GetAll()

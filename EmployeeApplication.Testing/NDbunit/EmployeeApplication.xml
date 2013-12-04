@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<EmployeeApplication xmlns="http://tempuri.org/EmployeeApplication.xsd">
+  <Department>
+    <Id>1</Id>
+    <Name>User1</Name>
+    <PhoneNumber>401 825 1234</PhoneNumber>
+  </Department>
+  <Department>
+    <Id>2</Id>
+    <Name>User2</Name>
+    <PhoneNumber>401 825 1234</PhoneNumber>
+  </Department>
+  <Employee>
+    <Id>1</Id>
+    <FirstName>Jeffrey</FirstName>
+    <Position>Software Engineer</Position>
+    <EmployeeDepartment_id>1</EmployeeDepartment_id>
+  </Employee>
+  <Employee>
+    <Id>2</Id>
+    <FirstName>Kristin</FirstName>
+    <Position>Product Owner</Position>
+    <EmployeeDepartment_id>2</EmployeeDepartment_id>
+  </Employee>
+</EmployeeApplication>

@@ -1,3 +1,4 @@
+using System.Configuration;
 using EmployeeApplication.Domain.Model;
 using EmployeeApplication.Infrastructure.Database;
 using FluentNHibernate.Automapping;
@@ -14,10 +15,13 @@ namespace EmployeeApplication.Infrastructure.Registries
         public DatabaseRegistry()
         {
             var nHibernateConfiguration = new EmployeeApplicationNHibernateConfiguration();
+            //string connectionString = ConfigurationManager.ConnectionStrings["EmployeeApplicationContext"].ConnectionString;
+
 
             ISessionFactory sessionFactory = Fluently
                 .Configure()
-                .Database(SQLiteConfiguration.Standard.InMemory)
+                .Database(SQLiteConfiguration.Standard.UsingFile(@"sqlite.db"))
+                //.Database(MsSqlConfiguration.MsSql2008.ConnectionString(connectionString))
                 .Mappings(m =>
                           m.AutoMappings
                            .Add(AutoMap.AssemblyOf<Employee>(nHibernateConfiguration))

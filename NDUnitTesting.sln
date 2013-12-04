@@ -3,6 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeApplication", "EmployeeApplication\EmployeeApplication.csproj", "{B0E91A83-7A5D-4BFA-9EB1-D1AB0918AE05}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeApplication.Testing", "EmployeeApplication.Testing\EmployeeApplication.Testing.csproj", "{8EE1FE1F-6720-4715-B858-08DDFBC47500}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6F1E5DE3-D2D6-4FEA-BDD5-CCF250719CCA}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +20,10 @@ Global
 		{B0E91A83-7A5D-4BFA-9EB1-D1AB0918AE05}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0E91A83-7A5D-4BFA-9EB1-D1AB0918AE05}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0E91A83-7A5D-4BFA-9EB1-D1AB0918AE05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EE1FE1F-6720-4715-B858-08DDFBC47500}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EE1FE1F-6720-4715-B858-08DDFBC47500}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EE1FE1F-6720-4715-B858-08DDFBC47500}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EE1FE1F-6720-4715-B858-08DDFBC47500}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
