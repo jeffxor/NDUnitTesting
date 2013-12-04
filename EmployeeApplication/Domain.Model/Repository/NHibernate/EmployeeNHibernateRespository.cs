@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using NHibernate;
+using NHibernate.Linq;
 
 namespace EmployeeApplication.Domain.Model.Repository.NHibernate
 {
@@ -13,14 +15,14 @@ namespace EmployeeApplication.Domain.Model.Repository.NHibernate
             _session = session;
         }
 
-        public Employee GetById(int Id)
+        public Employee GetById(int id)
         {
-            throw new NotImplementedException();
+            return _session.Get<Employee>(id);
         }
 
         public List<Employee> GetAll()
         {
-            throw new NotImplementedException();
+            return _session.Query<Employee>().ToList();
         }
 
         public Employee Save(Employee employee)

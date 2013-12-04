@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain.Model\Repository\EmployeeNHibernateRepositoryTest.cs" />
     <Compile Include="Domain.Model\Repository\DeparmentNHibernateRepositoryTest.cs" />
     <Compile Include="NDbunit\EmployeeApplication.cs">
       <DependentUpon>EmployeeApplication.xsd</DependentUpon>
