@@ -1,0 +1,8 @@
+<manifest name="Front Office Edge">
+	<release name="%version%">
+		<artifact name="MvcApplication2"                   version="%version%"       extension="zip"  deploy="true" retrieval="http"   manifest="false" source="http://bamboo.ds.adp.com/artifact/%location%/WebApplication2" />
+		<artifact name="WindowsService1"                   version="%version%"       extension="zip"  deploy="true" retrieval="http"   manifest="false" source="http://bamboo.ds.adp.com/artifact/%location%/WebApplication2" />
+		<artifact name="Front Office Edge_TopologyManifest"                 version="%version%"       extension="xml"     deploy="true" retrieval="http"   manifest="true"  source="http://bamboo.ds.adp.com/artifact/%location%/Manifest" />
+		<artifact name="Front Office Edge_EnvironmentManifest_LAB"  version="%version%"       extension="xml"     deploy="true" retrieval="http"   manifest="true"  source="http://bamboo.ds.adp.com/artifact/%location%/Manifest" />
+	</release>
+</manifest>

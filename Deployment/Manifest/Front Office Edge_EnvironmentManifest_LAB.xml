@@ -1,0 +1,20 @@
+<env name="LAB" escape-char="@">
+	<params>
+		<param name='execution-server-agent'>ALMNES01</param>
+	</params>
+	<Deployment>
+		<Artifact fullname="MvcApplication2.zip" TargetFolder="D:\Webs\MvcApplication2" AppPool="MvcApplication2"/>
+	</Deployment>
+	<Config-Manipulation>
+	<JSON-Transformations>
+	</JSON-Transformations>
+		<TXT-Transformations>
+		</TXT-Transformations>
+		<XML-Transformations>
+		</XML-Transformations>
+	</Config-Manipulation>
+	<Promotion>
+	</Promotion>
+</env>
+
+

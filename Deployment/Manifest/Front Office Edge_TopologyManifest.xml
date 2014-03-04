@@ -1,0 +1,17 @@
+<topology name="Front Office Edge">
+  <server-type name="Common - Host Front End">
+    <Artifacts>
+      <Artifact fullname="MvcApplication2.zip" type="WebApp" />
+    </Artifacts>
+  </server-type>
+ 
+  <steps>
+    <step name="Stage in Datacenter" 	          process="Stage Artifacts" 			    dependency="NONE" />
+    <step name="Perform Config Customization" 	process="Manipulate Config Files"   dependency="Stage in Datacenter" />
+    <step name="Distribute to Servers" 		      process="Distribute Artifacts" 	    dependency="Perform Config Customization" />
+    <step name="Deploy Web Applications" 		    process="Deploy WebApp" 	          dependency="Distribute to Servers" />
+    <step name="Test Deployment Remotely" 		  process="Run Remote Tests" 	        dependency="Deploy Web Applications" />
+    <step name="Promote Artifacts" 		          process="Register Deployment" 	    dependency="Test Deployment Remotely" />
+    <step name="Promote Release" 		            process="Promote Release" 	        dependency="Promote Artifacts" />
+  </steps>
+</topology>
